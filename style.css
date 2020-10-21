@@ -343,7 +343,7 @@ body{
         width:80%;
         margin:0;
         text-align: center;
-        transform:translateX(120deg);
+        transform: translateX(120deg);
  
     }
     .navbar ul li{
