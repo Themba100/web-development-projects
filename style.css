@@ -119,15 +119,7 @@ body{
 .main-section ul li{
     margin: 0 10px;
 }
-@media(min-width:480px){
-    .main-section ul{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        list-style: none;
-    
-    }
-}
+
 .images{
     display: block;
     width:100%;
@@ -136,10 +128,15 @@ body{
 }
 .box{
     color: burlywood;
-   /* border: 1px solid goldenrod;
-    border-radius: 10px;*/
+    border: 1px solid goldenrod;
+    border-radius: 10px;
     background-image: linear-gradient(to bottom,black, transparent);
     text-align: center;
+    padding: 5px;
+}
+.box:hover{
+    border: 1px solid gold;
+    border-radius: 10px;
 }
 .box h3{
     text-transform: uppercase;
@@ -161,6 +158,8 @@ body{
     border:1px solid burlywood;
     border-radius: 10px;
     padding:13px;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 .about-section{
     background:gray;
@@ -186,13 +185,308 @@ body{
     padding:15px;
     background-image: linear-gradient(to right,goldenrod,transparent);
     margin: 0;
-    height: 250px;
+    height: 150px;
+    
 
-
+}
+.newsletter h3{
+     margin: 0;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom,black,transparent);
+    font-size: 25px;
+    text-transform:uppercase ;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    padding: 5px;
 }
 .forms{
     position:absolute;
     left:43%;
-    
+}
+.forms input[type='text']{
+    padding:10px;
+    text-align: center;
+    color:black;
+    border:1px solid black;
+    border-radius: 7px;
 
 }
+.forms input[type = "submit"]{
+    background: linear-gradient(to bottom,gold,black);
+    padding:10px;
+    color:white;
+    border:1px solid transparent;
+    border-radius: 8px;
+}
+.languages{
+    background:grey;
+    text-align: center;
+    padding:19px;
+    margin:0;
+}
+.languages select{
+    padding:10px;
+    text-align:center;
+    background:transparent;
+    color:white;
+}
+.footer{
+    background: black;
+    padding:20px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+/* Responsive layout using media queries*/
+@media(max-width:500px){
+   .main-header{
+       max-width: 100%;
+       background-position: top;
+       height:370.5px;
+       margin:0;
+   } 
+   .navbar{
+       padding:7.5px;
+   }
+   .navbar ul{
+       flex-direction: column;
+       position: fixed;
+       background-image: linear-gradient(to right,black,transparent);
+       top:80px;
+       left:10%;
+       width:80%;
+       margin:0;
+       text-align: center;
+       transform:translateX(120deg);
+
+   }
+   .navbar ul li{
+       margin:15px;
+   }
+   .heading-content{
+       position:absolute;
+       left: 20%;
+       top:20%;
+   }
+   .heading-primary-main{
+       font-size: 30px;
+   }
+   .heading-primary-sub{
+       font-size:20px;
+   }
+   .heading-content a{
+       transform: scaleX(0.5) scaleY(0.5);
+       font-size: 11px;
+       padding:9px;
+       letter-spacing: 0;
+   }
+   .main-section h2{
+       font-size: 25px;
+       
+   }
+   .main-section ul{
+       flex-direction: column;
+       margin: 0;
+       width:80%;
+       left:20%;
+   }
+   .main-section ul li{
+       margin:15px;
+   }
+   .about-section{
+       margin:0;
+   }
+   .about-section h2{
+    font-size: 22px;
+   }
+   .about-section p{
+       font-size: 14px;
+   }
+   .newsletter h3{
+       font-size: 22px;
+
+   }
+   .forms{
+       position: absolute;
+       left:20%;
+       
+   }
+   .forms input[type ="text"]{
+        padding:5px;
+   }
+   .forms input[type = "submit"]{
+       transform:scale(0.8);
+   }
+   .footer{
+       font-size: 14px;
+   }
+   }
+   @media(max-width:600px){
+    .main-header{
+        max-width: 100%;
+        background-position: top;
+        height:370.5px;
+        margin:0;
+    } 
+    .navbar{
+        padding:7.5px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: fixed;
+        background-image: linear-gradient(to right,black,transparent);
+        top:80px;
+        left:10%;
+        width:80%;
+        margin:0;
+        text-align: center;
+        transform:translateX(120deg);
+ 
+    }
+    .navbar ul li{
+        margin:15px;
+    }
+    .heading-content{
+        position:absolute;
+        left: 20%;
+        top:20%;
+    }
+    .heading-primary-main{
+        font-size: 30px;
+    }
+    .heading-primary-sub{
+        font-size:20px;
+    }
+    .heading-content a{
+        transform: scaleX(0.5) scaleY(0.5);
+        font-size: 11px;
+        padding:9px;
+        letter-spacing: 0;
+    }
+    .main-section h2{
+        font-size: 25px;
+        
+    }
+    .main-section ul{
+        flex-direction: column;
+        margin: 0;
+        width:80%;
+        left:20%;
+    }
+    .main-section ul li{
+        margin:15px;
+    }
+    .about-section{
+        margin:0;
+    }
+    .about-section h2{
+     font-size: 22px;
+    }
+    .about-section p{
+        font-size: 14px;
+    }
+    .newsletter h3{
+        font-size: 22px;
+ 
+    }
+    .forms{
+        position: absolute;
+        left:20%;
+        
+    }
+    .forms input[type ="text"]{
+         padding:5px;
+    }
+    .forms input[type = "submit"]{
+        transform:scale(0.8);
+    }
+    .footer{
+        font-size: 14px;
+    }
+   }
+   @media(max-width:700px){
+    .main-header{
+        max-width: 100%;
+        background-position: top;
+        height:370.5px;
+        margin:0;
+    } 
+    .navbar{
+        padding:7.5px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: fixed;
+        background-image: linear-gradient(to right,black,transparent);
+        top:80px;
+        left:10%;
+        width:80%;
+        margin:0;
+        text-align: center;
+        transform:translateX(120deg);
+ 
+    }
+    .navbar ul li{
+        margin:15px;
+    }
+    .heading-content{
+        position:absolute;
+        left: 20%;
+        top:20%;
+    }
+    .heading-primary-main{
+        font-size: 30px;
+    }
+    .heading-primary-sub{
+        font-size:20px;
+    }
+    .heading-content a{
+        transform: scaleX(0.5) scaleY(0.5);
+        font-size: 11px;
+        padding:9px;
+        letter-spacing: 0;
+    }
+    .main-section h2{
+        font-size: 25px;
+        
+    }
+    .main-section ul{
+        flex-direction: column;
+        margin: 0;
+        width:80%;
+        left:20%;
+    }
+    .main-section ul li{
+        margin:15px;
+    }
+    .about-section{
+        margin:0;
+    }
+    .about-section h2{
+     font-size: 22px;
+    }
+    .about-section p{
+        font-size: 14px;
+    }
+    .newsletter h3{
+        font-size: 22px;
+ 
+    }
+    .forms{
+        position: absolute;
+        left:20%;
+        
+    }
+    .forms input[type ="text"]{
+         padding:5px;
+    }
+    .forms input[type = "submit"]{
+        transform:scale(0.8);
+    }
+    .footer{
+        font-size: 14px;
+    }
+   }
